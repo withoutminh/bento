@@ -7,10 +7,10 @@ const today = new Date();
 const hour = today.getHours();
 const name = CONFIG.name;
 
-const gree1 = `${CONFIG.greetingNight}\xa0`;
-const gree2 = `${CONFIG.greetingMorning}\xa0`;
-const gree3 = `${CONFIG.greetingAfternoon}\xa0`;
-const gree4 = `${CONFIG.greetingEvening}\xa0`;
+const gree1 = `${CONFIG.greetingNight}`;
+const gree2 = `${CONFIG.greetingMorning}`;
+const gree3 = `${CONFIG.greetingAfternoon}`;
+const gree4 = `${CONFIG.greetingEvening}`;
 
 if (hour >= 23 || hour < 6) {
 	document.getElementById('greetings').innerText = gree1 + name;

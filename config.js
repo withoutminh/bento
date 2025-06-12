@@ -12,34 +12,34 @@ const CONFIG = {
 
 	// General
 	name: 'Nhat Minh',
-	imageBackground: false,
+	imageBackground: true,
 	openInNewTab: true,
 	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
-	greetingAfternoon: 'Good afternoon,',
-	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to Sleep!',
+	greetingMorning: 'おはよう!',
+	greetingAfternoon: 'こんにちは、',
+	greetingEvening: 'こんばんは、',
+	greetingNight: '寝なさい!',
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
 	// Weather
-	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
-	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
+	weatherKey: '288752458e9b0130f398aa44af330a02', // Write here your API Key
+	weatherIcons: 'Onedark', // 'Onedark', 'Nord', 'Dark', 'White'
 	weatherUnit: 'C', // 'F', 'C'
-	language: 'en', // More languages in https://openweathermap.org/current#multi
+	language: 'ja', // More languages in https://openweathermap.org/current#multi
 
 	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-	defaultLatitude: '37.775',
-	defaultLongitude: '-122.419',
+	defaultLatitude: '10.804823',
+	defaultLongitude: '106.640423',
 
 	// Autochange
-	autoChangeTheme: true,
+	autoChangeTheme: false,
 
 	// Autochange by OS
-	changeThemeByOS: true,
+	changeThemeByOS: false,
 
 	// Autochange by hour options (24hrs format, string must be in: hh:mm)
 	changeThemeByHour: false,
@@ -53,39 +53,39 @@ const CONFIG = {
 	firstButtonsContainer: [
 		{
 			id: '1',
+			name: 'Facebook',
+			icon: 'facebook',
+			link: 'https://www.facebook.com/',
+		},
+		{
+			id: '2',
+			name: 'Youtube',
+			icon: 'youtube',
+			link: 'https://www.youtube.com/',
+		},
+		{
+			id: '5',
+			name: 'Mail',
+			icon: 'mail',
+			link: 'https://mail.google.com/mail/u/0/',
+		},
+		{
+			id: '4',
+			name: 'X',
+			icon: 'x',
+			link: 'https://x.com/',
+		},
+		{
+			id: '3',
 			name: 'Github',
 			icon: 'github',
 			link: 'https://github.com/',
 		},
 		{
-			id: '2',
-			name: 'Mail',
-			icon: 'mail',
-			link: 'https://mail.protonmail.com/',
-		},
-		{
-			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
-		},
-		{
-			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
-		},
-		{
-			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
-		},
-		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
+			name: 'Spotify',
+			icon: 'music',
+			link: 'https://open.spotify.com/',
 		},
 	],
 
@@ -135,46 +135,46 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'earth',
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'ChatGPT',
+					link: 'https://chat.openai.com/',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Gemini',
+					link: 'https://gemini.google.com/app',
 				},
 				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Claude',
+					link: 'https://claude.ai/',
 				},
 				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Wikipedia',
+					link: 'https://www.wikipedia.org/',
 				},
 			],
 		},
 		{
-			icon: 'coffee',
+			icon: 'gamepad-2',
 			id: '2',
 			links: [
 				{
-					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					name: 'Tracker',
+					link: 'https://tracker.gg/valorant/profile/riot/4ever%20love%20u%23htt',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					name: 'HoYoLAB',
+					link: 'https://www.hoyolab.com/',
 				},
 				{
-					name: 'Trello',
-					link: 'https://www.trello.com',
+					name: 'HOK',
+					link: 'https://camp.honorofkings.com/',
 				},
 				{
-					name: 'Slack',
-					link: 'https://www.slack.com',
+					name: 'Discord',
+					link: 'https://discord.com/channels/@me',
 				},
 			],
 		},

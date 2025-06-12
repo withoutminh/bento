@@ -26,10 +26,10 @@
   --cards: #e4e6e6; /* Cards color */
 
   /* Image background  */
-  --imgbg: url(assets/background.jpg); /* Image URL */
+  --imgbg: url(assets/background.mp4); /* Image URL */
   --imgcol: linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.7)
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
   ); /* Filter color */
 }
 
@@ -45,8 +45,8 @@
 
   /* Image background  */
   --imgcol: linear-gradient(
-    rgba(0, 0, 0, 0.85),
-    rgba(0, 0, 0, 0.85)
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
   ); /* Filter color */
 }
 
@@ -361,3 +361,26 @@ body {
     padding-right: 100px;
   }
 }
+
+/*  
+  I prefer background videos over images — they just look way cooler xD 
+  I kept the image background code, just in case I get bored of the video and 
+  want to switch back someday.
+*/
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; 
+  pointer-events: none; 
+/*
+  My video has a section that matches the text color on light mode, 
+  so this code is simply optimized for dark mode. I didn’t bother optimizing 
+  for light mode, but I don’t use light mode anyway, so I don’t really care :P
+*/
+  filter: brightness(0.9);
+}
+
