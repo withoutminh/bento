@@ -163,15 +163,10 @@ body {
   color: var(--fg);
 }
 
-#month,
-#day {
+#month-day {
   font-size: var(--fg-date);
   font-weight: bold;
   color: var(--fg);
-}
-
-#day {
-  margin-left: 1.5rem;
 }
 
 #greetings {
